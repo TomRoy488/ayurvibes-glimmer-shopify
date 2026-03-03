@@ -1,0 +1,4320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ayurvibe-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ececec;
+  border-bottom: 1px solid #c5cfd1;
+}
+
+.ayurvibe-header a,
+.ayurvibe-header button {
+  color: #13363f;
+  text-decoration: none;
+}
+
+.ayurvibe-headerLogo {
+  font-size: 2.95rem;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ayurvibe-headerMobileBar {
+  height: 58px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ayurvibe-headerMobileIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ayurvibe-headerMobileIcons button,
+.ayurvibe-headerMobileIcons a {
+  border: 0;
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ayurvibe-headerMobileIcons button svg,
+.ayurvibe-headerMobileIcons a svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-headerMobileIcons .is-cart {
+  position: relative;
+}
+
+.ayurvibe-headerMobileIcons .is-cart span {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #0f242a;
+  color: #e6f5b1;
+  font-size: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.ayurvibe-headerMobileMenu {
+  min-height: calc(100vh - 58px);
+  background: #ececec;
+  padding: 0 16px 22px;
+  overflow-y: auto;
+}
+
+.ayurvibe-headerMobileMenuLine {
+  border-top: 3px solid #17363f;
+}
+
+.ayurvibe-mobileMenuRow {
+  width: 100%;
+  min-height: 78px;
+  border: 0;
+  border-bottom: 1px solid #bcc7ca;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 58px 1fr 16px;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.ayurvibe-mobileMenuRow.is-simple {
+  min-height: 56px;
+  grid-template-columns: 1fr 16px;
+}
+
+.ayurvibe-mobileMenuRow img {
+  width: 58px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.ayurvibe-mobileLink,
+.ayurvibe-mobileLogin {
+  display: block;
+  padding-top: 16px;
+  color: #17363f;
+  font-size: 1.05rem;
+}
+
+.ayurvibe-mobileLogin {
+  margin-top: 10px;
+}
+
+.ayurvibe-mobileSocial {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.ayurvibe-mobileSocial a {
+  width: 22px;
+  height: 22px;
+}
+
+.ayurvibe-mobileSocial svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-headerDesktop {
+  padding: 8px 18px 7px;
+}
+
+.ayurvibe-headerDesktopTop {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  font-size: 13px;
+}
+
+.ayurvibe-headerUtilityNav {
+  display: flex;
+  gap: 20px;
+}
+
+.ayurvibe-headerUtilitySocial {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 14px;
+  border-left: 1px solid #9dacb0;
+}
+
+.ayurvibe-headerUtilitySocial a {
+  width: 18px;
+  height: 18px;
+}
+
+.ayurvibe-headerUtilitySocial svg,
+.ayurvibe-headerCurrency svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-headerCurrency {
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ayurvibe-headerCurrency svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ayurvibe-headerDesktopBottom {
+  height: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 26px;
+  border-bottom: 3px solid #17363f;
+  padding-bottom: 20px;
+
+}
+
+.ayurvibe-headerMainNav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.ayurvibe-headerMainNav a {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+.ayurvibe-headerDesktopIcons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ayurvibe-headerDesktopIcons button,
+.ayurvibe-headerDesktopIcons a {
+  width: 29px;
+  height: 29px;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ayurvibe-headerDesktopIcons button svg,
+.ayurvibe-headerDesktopIcons a svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-headerDesktopIcons .is-cart {
+  position: relative;
+}
+
+.ayurvibe-headerDesktopIcons .is-cart span {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: #0f242a;
+  color: #e6f5b1;
+  font-size: 11px;
+  display: grid;
+  place-items: center;
+}
+
+.ayurvibe-siteFooter {
+  background: #dbe2e5;
+  padding: 14px 0 18px;
+  margin-top: 0;
+}
+
+.ayurvibe-siteFooterInner {
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 0 14px;
+  color: #35545b;
+}
+
+.ayurvibe-siteFooterLogo {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #4a6661;
+}
+
+.ayurvibe-siteFooterBrand p {
+  margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.ayurvibe-siteFooterBrand p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.ayurvibe-siteFooterSocial {
+  margin-top: 18px;
+  display: flex;
+  gap: 14px;
+}
+
+.ayurvibe-siteFooterSocial a {
+  width: 23px;
+  height: 23px;
+  color: #17363f;
+}
+
+.ayurvibe-siteFooterSocial svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-siteFooterMobileCols {
+  margin-top: 16px;
+}
+
+.ayurvibe-siteFooterAccordion {
+  width: 100%;
+  min-height: 38px;
+  border: 0;
+  border-top: 1px solid #c3cdd1;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #4b6369;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+.ayurvibe-siteFooterAccordion svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ayurvibe-siteFooterAccordionBody {
+  max-height: 0;
+  overflow: hidden;
+  display: grid;
+  transition: max-height 240ms ease;
+}
+
+.ayurvibe-siteFooterAccordionBody.is-open {
+  max-height: 260px;
+}
+
+.ayurvibe-siteFooterAccordionBody a {
+  color: #35545b;
+  padding: 8px 0;
+  font-size: 0.97rem;
+}
+
+.ayurvibe-siteFooterMemberMobile {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #c3cdd1;
+}
+
+.ayurvibe-siteFooterMemberMobile h4,
+.ayurvibe-siteFooterSignupMobile h4 {
+  margin: 0;
+  color: #4b6369;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+.ayurvibe-siteFooterMember {
+  margin-top: 14px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #617b75;
+}
+
+.ayurvibe-siteFooterSignupMobile {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid #c3cdd1;
+}
+
+.ayurvibe-siteFooterSignupMobile p {
+  margin: 12px 0 0;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #214047;
+}
+
+.ayurvibe-siteFooterEmailRow {
+  margin-top: 14px;
+  min-height: 37px;
+  border-bottom: 1px solid #48636a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #6a7e84;
+}
+
+.ayurvibe-siteFooterEmailRow span {
+  font-size: 1.35rem;
+}
+
+.ayurvibe-siteFooterEmailRow button {
+  border: 0;
+  background: transparent;
+  color: #27444c;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+}
+
+.ayurvibe-siteFooterBottom {
+  margin-top: 18px;
+}
+
+.ayurvibe-siteFooterCurrency {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #27444c;
+  font-size: 0.95rem;
+}
+
+.ayurvibe-siteFooterCurrency svg {
+  width: 14px;
+  height: 14px;
+}
+
+.ayurvibe-siteFooterBottom p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #4d676d;
+  line-height: 1.45;
+}
+
+.ayurvibe-siteFooterPayments {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.ayurvibe-payBadge {
+  min-width: 36px;
+  height: 22px;
+  border: 1px solid #b9c4c8;
+  background: #f3f6f7;
+  border-radius: 3px;
+  padding: 0 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #3d555b;
+  font-size: 0.64rem;
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-siteFooter {
+    padding: 34px 0 24px;
+  }
+
+  .ayurvibe-siteFooterInner {
+    padding: 0 26px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .ayurvibe-siteFooterBrand p {
+    font-size: 16px;
+    max-width: 340px;
+  }
+
+  .ayurvibe-siteFooterSocial a {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ayurvibe-siteFooterDesktopCols {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+        gap: 50px;
+    align-items: start;
+  }
+
+  .ayurvibe-siteFooterCol h4,
+  .ayurvibe-siteFooterSignup h4 {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #2d4a52;
+  }
+
+  .ayurvibe-siteFooterCol a {
+    display: block;
+    margin-top: 10px;
+    color: #3f5f67;
+    font-size: 16px;
+  }
+
+  .ayurvibe-siteFooterSignup p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #1e3c44;
+    max-width: 340px;
+  }
+
+  .ayurvibe-siteFooterBottom {
+    margin-top: 24px;
+    grid-column: 1 / 3;
+  }
+
+  .ayurvibe-siteFooterBottom p {
+    font-size: 16px;
+  }
+
+  .ayurvibe-siteFooterPayments {
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurvibe-headerLogo {
+    font-size: 40px;
+  }
+
+  .ayurvibe-headerMainNav a {
+    font-size: 18px;
+  }
+
+  .ayurvibe-siteFooterDesktopCols {
+    /* margin-top: -58px;
+    margin-left: 330px; */
+  }
+}
+
+:root {
+  color-scheme: light;
+  --ayurvibe-space-1: 0.5rem;
+  --ayurvibe-space-2: 0.75rem;
+  --ayurvibe-space-3: 1rem;
+  --ayurvibe-space-4: 1.5rem;
+  --ayurvibe-space-5: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f4f4f1;
+  color: #111;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ayurvibe-home {
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+}
+
+.ayurvibe-section {
+  position: relative;
+}
+
+.ayurvibe-container {
+  width: 100%;
+}
+
+.ayurvibe-hero {
+  min-height: 336px;
+  background-color: #e4e4e4;
+  background-image: url("https://stiletto-theme-glimmer.myshopify.com/cdn/shop/files/superfruit-aha-slide-mobile-2.jpg?v=1660021835&width=650");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ayurvibe-heroWrap {
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2.1rem;
+  padding-bottom: 2.45rem;
+  padding-left: 1.05rem;
+  padding-right: 1.05rem;
+}
+
+.ayurvibe-heroContent,
+.ayurvibe-minisContent,
+.ayurvibe-featureContent,
+.ayurvibe-footerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.ayurvibe-heroContent {
+  max-width: 18.375rem;
+  align-items: flex-start;
+}
+
+.ayurvibe-sectionTitle,
+.ayurvibe-heroTitle,
+.ayurvibe-featureTitle,
+.ayurvibe-footerTitle {
+  text-wrap: balance;
+}
+
+.ayurvibe-heroEyebrow {
+  font-size: 0.525rem;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  color: #234b52;
+}
+
+.ayurvibe-heroTitle {
+  font-size: clamp(2.45rem, 11.2vw, 3.15rem);
+  letter-spacing: -0.01em;
+  color: #133f46;
+}
+
+.ayurvibe-heroSubtitle,
+.ayurvibe-minisSubtitle,
+.ayurvibe-featureSubtitle,
+.ayurvibe-reviewText,
+.ayurvibe-testimonialText {
+  line-height: 1.55;
+}
+
+.ayurvibe-heroSubtitle {
+  line-height: 1.35;
+  font-size: clamp(0.84rem, 4.9vw, 1.4rem);
+  max-width: 17.0625rem;
+  color: #1c474f;
+}
+
+.ayurvibe-heroCta {
+  min-width: 5.56rem;
+  min-height: 48px;
+  font-size: 16px;
+  max-height: 48px;
+}
+
+.ayurvibe-showcase {
+  background: #ebebeb;
+  padding: 40px 0.7rem 40px;
+}
+.ayurvibe-showcaseIntro{
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
+.ayurvibe-showcaseHeading {
+  margin: 0;
+  font-size: clamp(1.54rem, 6.58vw, 2.1rem);
+  font-weight: 400;
+  color: #123a42;
+}
+
+.ayurvibe-showcaseCopy {
+  margin-bottom: 0;
+  font-size: clamp(0.735rem, 4.06vw, 1.085rem);
+  color: #153940;
+}
+
+.ayurvibe-showcaseGrid {
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.ayurvibe-showcaseCard {
+  min-height: 520px;
+}
+
+.ayurvibe-showcaseVisual {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ayurvibe-showcaseShade {
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.08) 30%, rgba(10, 10, 10, 0.64) 100%);
+}
+
+.ayurvibe-showcaseBadge {
+  margin: 0;
+  font-size: 0.77rem;
+}
+
+.ayurvibe-showcaseTitle {
+  margin-bottom: 0;
+  font-size: clamp(1.61rem, 6.3vw, 2.24rem);
+  font-weight: 400;
+}
+
+.ayurvibe-showcaseSubtitle {
+  margin-bottom: 0;
+  font-size: clamp(0.77rem, 4.76vw, 1.4rem);
+}
+
+.ayurvibe-showcaseCta {
+  min-width: 5.95rem;
+  min-height: 48px;
+  max-height: 48px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ayurvibe-summerStrip {
+  background: #ececec;
+  padding: 0.35rem 0;
+}
+
+.ayurvibe-summerStripTrack {
+  max-width: 120rem;
+}
+
+.ayurvibe-summerStripImage {
+  flex: 0 0 auto;
+  border: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.ayurvibe-summerStripText {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.ayurvibe-bundle {
+  background: #ececec;
+}
+
+.ayurvibe-bundleLayout {
+  display: block;
+}
+
+.ayurvibe-bundleMain {
+  display: block;
+}
+
+.ayurvibe-bundleIntro {
+  max-width: 23rem;
+}
+
+.ayurvibe-bundleTitle {
+  margin: 0;
+  font-size: clamp(1.35rem, 6.8vw, 1.9rem);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.ayurvibe-bundleSubtitle {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+  font-size: clamp(0.98rem, 4.2vw, 1.15rem);
+  line-height: 1.35;
+}
+
+.ayurvibe-bundleCta {
+  margin-top: 1rem;
+  min-height: 2.65rem;
+  padding: 0.45rem 1rem;
+  font-size: 1.05rem;
+  background: transparent;
+}
+
+.ayurvibe-bundleHero {
+  margin-top: 1.15rem;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+.ayurvibe-bundleList {
+  margin-top: 1.25rem;
+  border-top: 1px solid #d2d2d2;
+}
+
+.ayurvibe-bundleItem {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.ayurvibe-bundleItemImage {
+  width: 5.5rem;
+  height: 6rem;
+}
+
+.ayurvibe-bundleItemContent {
+  flex: 1 1 auto;
+}
+
+.ayurvibe-bundleItemTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.ayurvibe-bundleItemPrice {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.ayurvibe-bundleQuickView {
+  min-height: 2.1rem;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.95rem;
+}
+
+.ayurvibe-newArrivals {
+  background: #ececec;
+}
+
+.ayurvibe-bestSeller .ayurvibe-arrivalBadge {
+  text-transform: none;
+}
+
+.ayurvibe-newArrivalsTitle {
+  margin: 0;
+  font-size: clamp(1.35rem, 6.2vw, 2rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.ayurvibe-newArrivalsTrack {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-newArrivalsTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.ayurvibe-arrivalCard {
+  width: 10.75rem;
+}
+
+.ayurvibe-arrivalImageWrap {
+  height: 15rem;
+}
+
+.ayurvibe-arrivalBadge {
+  border: 1px solid #1f444b;
+  background: #ececec;
+  color: #1f444b;
+  font-size: 0.62rem;
+  line-height: 1;
+  padding: 0.2rem 0.25rem;
+}
+
+.ayurvibe-arrivalBadge.is-sale {
+  border-color: #d7372f;
+  color: #d7372f;
+}
+
+.ayurvibe-arrivalQuickIcon {
+  color: #143e46;
+}
+
+.ayurvibe-arrivalTitle {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.ayurvibe-arrivalPrice {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.ayurvibe-arrivalSizes {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.ayurvibe-arrowBtn {
+  border: 0;
+  background: transparent;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: #31484f;
+  padding: 0;
+}
+
+.ayurvibe-scrubSale {
+  background-image: url("https://stiletto-theme-glimmer.myshopify.com/cdn/shop/files/03_Neroli_Scrub.jpg?v=1659156960&width=1600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ayurvibe-scrubSaleOverlay {
+  background: rgba(34, 34, 34, 0.38);
+  padding: 2rem 1.5rem;
+}
+
+.ayurvibe-scrubSaleContent {
+  display: flex;
+  flex-direction: column;
+  color: #d8f1a6;
+}
+
+.ayurvibe-scrubSaleEyebrow {
+  margin: 0;
+  font-size: 1.95rem;
+  line-height: 1.1;
+}
+
+.ayurvibe-scrubSalePercent {
+  margin: 0.45rem 0 0;
+  font-size: 9.25rem;
+  line-height: 0.95;
+  font-weight: 500;
+}
+
+.ayurvibe-scrubSalePercentSign {
+  margin-left: 0.5rem;
+  font-size: 4.8rem;
+  vertical-align: super;
+}
+
+.ayurvibe-scrubSaleFineprint {
+  margin: 0.7rem 0 0;
+  font-size: 0.66rem;
+  line-height: 1.25;
+}
+
+.ayurvibe-scrubSaleDivider {
+  width: 6rem;
+  border-top: 1px solid #d8f1a6;
+  margin: 1.6rem 0;
+}
+
+.ayurvibe-scrubSaleTitle {
+  margin: 0;
+  font-size: 2.15rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.ayurvibe-scrubSaleSubtitle {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 17rem;
+}
+
+.ayurvibe-scrubSaleCta {
+  margin-top: 1.2rem;
+  border: 0;
+  background: #d8f1a6;
+  color: #163e47;
+  min-height: 2.3rem;
+  min-width: 5.6rem;
+  font-size: 0.75rem;
+  padding: 0.45rem 0.85rem;
+}
+
+.ayurvibe-skinConcerns {
+  background: #ececec;
+}
+
+.ayurvibe-skinConcernsHeading {
+  margin: 0;
+  font-size: clamp(1.45rem, 6.2vw, 2.2rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.ayurvibe-skinConcernsGrid {
+  grid-template-columns: 1fr;
+}
+
+.ayurvibe-skinConcernCard {
+  min-height: 21rem;
+  max-height: 300px;
+}
+
+.ayurvibe-skinConcernShade {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06) 35%, rgba(0, 0, 0, 0.52) 100%);
+}
+
+.ayurvibe-skinConcernTitle {
+  margin: 0;
+  font-size: clamp(2.1rem, 9vw, 2.9rem);
+  line-height: 1.05;
+  font-weight: 400;
+}
+
+.ayurvibe-skinConcernCta {
+  margin-top: 0.9rem;
+  border: 0;
+  background: #d8f1a6;
+  color: #143e47;
+  min-height: 2.15rem;
+  min-width: 7.15rem;
+  padding: 0.35rem 0.8rem;
+  font-size: 0.83rem;
+}
+
+.ayurvibe-shopMinisPromo {
+  background: #ececec;
+}
+
+.ayurvibe-shopMinisPromoLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.ayurvibe-shopMinisPromoImage {
+  min-height: 15.5rem;
+}
+
+.ayurvibe-shopMinisPromoTitle {
+  margin: 0;
+  font-size: clamp(2.1rem, 11vw, 3rem);
+  line-height: 1.05;
+  font-weight: 500;
+}
+
+.ayurvibe-shopMinisPromoSubtitle {
+  margin: 0.85rem 0 0;
+  font-size: clamp(1.05rem, 6.2vw, 1.55rem);
+  line-height: 1.2;
+}
+
+.ayurvibe-shopMinisPromoCopy {
+  margin: 0.7rem 0 0;
+  font-size: clamp(0.95rem, 4.2vw, 1.2rem);
+  line-height: 1.45;
+  max-width: 27rem;
+}
+
+.ayurvibe-shopMinisPromoActions {
+  margin-top: 1.05rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.ayurvibe-shopMinisPromoCta {
+  min-height: 2.55rem;
+  min-width: 6.9rem;
+  border: 1px solid #2d4b56;
+  font-size: 14px;
+  padding: 0.45rem 0.9rem;
+}
+
+.ayurvibe-shopMinisPromoCta.is-primary {
+  background: #0e3e47;
+  color: #d9f6a2;
+}
+
+.ayurvibe-shopMinisPromoCta.is-secondary {
+  background: transparent;
+  color: #153f48;
+}
+
+.ayurvibe-shopType {
+  background: #ececec;
+}
+
+.ayurvibe-shopTypeHeading {
+  margin: 0;
+  font-size: clamp(1.5rem, 7vw, 2.2rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.ayurvibe-shopTypeTrack {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-shopTypeTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.ayurvibe-shopTypeCard {
+  width: 10.8rem;
+}
+
+.ayurvibe-shopTypeImage {
+  height: 10.2rem;
+}
+
+.ayurvibe-shopTypeFooter {
+  min-height: 2.35rem;
+  background: #002c22;
+  padding: 0.4rem 0.7rem;
+}
+
+.ayurvibe-shopTypeTitle {
+  margin: 0;
+  color: #d8f1a6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ayurvibe-shopTypeArrow {
+  color: #d8f1a6;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.ayurvibe-featuredSplitGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #000;
+}
+
+.ayurvibe-featuredSplitPanel {
+  min-height: 22rem;
+}
+
+.ayurvibe-featuredSplitText {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ayurvibe-featuredSplitEyebrow {
+  margin: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+}
+
+.ayurvibe-featuredSplitTitle {
+  margin: 0.45rem 0 0;
+  font-size: clamp(2rem, 9vw, 3rem);
+  line-height: 1.05;
+  font-weight: 400;
+}
+
+.ayurvibe-featuredSplitCopy {
+  margin: 0.85rem 0 0;
+  font-size: clamp(1.05rem, 4.3vw, 1.4rem);
+  line-height: 1.35;
+  max-width: 30rem;
+}
+
+.ayurvibe-featuredSplitCta {
+  margin-top: 1rem;
+  border: 0;
+  background: #d8f1a6;
+  color: #103d46;
+  min-width: 5.8rem;
+  min-height: 2.2rem;
+  font-size: 14px;
+  padding: 0.4rem 0.8rem;
+}
+
+.ayurvibe-featuredSplitImage {
+  min-height: 22rem;
+}
+
+.ayurvibe-quoteSpot {
+  background: #ececec;
+}
+
+.ayurvibe-quoteSpotLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ayurvibe-quoteSpotImage {
+  min-height: 21rem;
+}
+
+.ayurvibe-quoteSpotLabel {
+  margin: 0.65rem 0 0;
+  font-size: 0.9rem;
+}
+
+.ayurvibe-quoteSpotArrows {
+  margin-top: -0.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ayurvibe-quoteSpotArrow {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 999px;
+  background: #eef0ef;
+  color: #143e47;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.ayurvibe-quoteSpotContent {
+  margin-top: 0.9rem;
+}
+
+.ayurvibe-quoteSpotStars {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: 0.08em;
+}
+
+.ayurvibe-quoteSpotQuote {
+  margin: 0.75rem 0 0;
+  font-size: clamp(1.15rem, 6.4vw, 1.8rem);
+  line-height: 1.35;
+}
+
+.ayurvibe-quoteSpotAuthor {
+  margin: 0.7rem 0 0;
+  color: #7a8486;
+  font-size: 0.9rem;
+}
+
+.ayurvibe-whyChoose {
+  background: #ececec;
+}
+
+.ayurvibe-whyChooseHeading {
+  margin: 0;
+  font-size: clamp(1.65rem, 6.8vw, 2.55rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.ayurvibe-whyChooseGrid {
+  grid-template-columns: 1fr;
+}
+
+.ayurvibe-whyChooseImage {
+  min-height: 18rem;
+}
+
+.ayurvibe-whyChooseBody {
+  padding-top: 0.85rem;
+}
+
+.ayurvibe-whyChooseTitle {
+  margin: 0;
+  font-size: clamp(1.25rem, 5.4vw, 1.95rem);
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.ayurvibe-whyChooseText {
+  margin: 0.55rem 0 0;
+  font-size: clamp(0.98rem, 4.25vw, 1.32rem);
+  line-height: 1.45;
+}
+
+.ayurvibe-whyChooseCta {
+  margin-top: 0.9rem;
+  min-height: 2.2rem;
+  min-width: 6.6rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid #707980;
+  background: transparent;
+  color: #282c30;
+  font-size: 0.88rem;
+}
+
+.ayurvibe-blog {
+  background: #ececec;
+}
+
+.ayurvibe-blogHeading {
+  margin: 0;
+  font-size: clamp(1.65rem, 7vw, 2.5rem);
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.ayurvibe-blogViewAll {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 2px solid #183f47;
+  padding-bottom: 0.2rem;
+}
+
+.ayurvibe-blogImage {
+  min-height: 15rem;
+}
+
+.ayurvibe-blogBody {
+  width: calc(100% - 1.2rem);
+  margin: -2rem auto 0;
+  position: relative;
+  z-index: 2;
+  padding: 0.9rem 0.9rem 0.8rem;
+}
+
+.ayurvibe-blogTag {
+  display: inline-block;
+  border: 1px solid #6d8187;
+  color: #1b3f47;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.ayurvibe-blogTitle {
+  margin: 0.75rem 0 0;
+  font-size: clamp(1.4rem, 6.2vw, 2rem);
+  line-height: 1.2;
+  font-weight: 500;
+  max-width: 23rem;
+}
+
+.ayurvibe-blogDate {
+  margin: 0.45rem 0 0;
+  font-size: 0.9rem;
+}
+
+.ayurvibe-blogExcerpt {
+  margin: 0.8rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 28rem;
+}
+
+.ayurvibe-blogReadMore {
+  display: inline-block;
+  margin-top: 0.95rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 2px solid #183f47;
+  padding-bottom: 0.2rem;
+}
+
+.ayurvibe-communityPressTop {
+  background: #d9e3eb;
+}
+
+.ayurvibe-communityPressGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.ayurvibe-communityPressSource {
+  margin: 0;
+  color: #111f25;
+  font-size: 0.95rem;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.ayurvibe-communityPressQuote {
+  margin: 0.55rem 0 0;
+  font-size: 0.66rem;
+  line-height: 1.45;
+  color: #335055;
+}
+
+.ayurvibe-communityPressHero {
+  min-height: 23rem;
+  background:
+    linear-gradient(180deg, rgba(20, 31, 40, 0.45), rgba(12, 20, 29, 0.5)),
+    url("https://stiletto-theme-glimmer.myshopify.com/cdn/shop/files/044_1920x1200_0a0c29cd-a615-4a4d-b441-7d8f13799e2a.jpg?v=1659476777&width=800")
+      center / cover no-repeat;
+}
+
+.ayurvibe-communityPressHeroOverlay {
+  min-height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.6rem 1.1rem;
+  color: #fff;
+}
+
+.ayurvibe-communityPressEyebrow {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+}
+
+.ayurvibe-communityPressTitle {
+  margin: 0.75rem 0 0;
+  max-width: 21rem;
+  font-size: clamp(1.05rem, 5.2vw, 1.45rem);
+  line-height: 1.35;
+  font-weight: 400;
+}
+
+.ayurvibe-communityPressCta {
+  margin-top: 1rem;
+  min-height: 2.2rem;
+  min-width: 6.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: transparent;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 0.45rem 0.95rem;
+}
+
+.ayurvibe-communityPressBottom {
+  background: #000;
+  padding: 1.15rem 1rem;
+}
+
+.ayurvibe-communityPressBottomText {
+  margin: 0;
+  text-align: center;
+  color: #f0f3f5;
+  font-size: clamp(1.05rem, 6.8vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.ayurvibe-btn {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.ayurvibe-btn:hover {
+  filter: brightness(0.95);
+  transform: translateY(-1px);
+}
+
+.ayurvibe-btn-secondary {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.ayurvibe-btn-secondary:hover {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.ayurvibe-card {
+  background: transparent;
+}
+
+.ayurvibe-reviewCard,
+.ayurvibe-productCard,
+.ayurvibe-overlayTile {
+  isolation: isolate;
+}
+
+.ayurvibe-tile .ayurvibe-image,
+.ayurvibe-card .ayurvibe-image {
+  transition: transform 0.35s ease;
+}
+
+.ayurvibe-tile:hover .ayurvibe-image,
+.ayurvibe-card:hover .ayurvibe-image {
+  transform: scale(1.02);
+}
+
+.ayurvibe-promo {
+  background:
+    linear-gradient(105deg, rgba(47, 54, 47, 0.78), rgba(30, 34, 30, 0.8)),
+    radial-gradient(circle at 18% 32%, rgba(219, 241, 129, 0.34), transparent 42%),
+    #4a4c43;
+}
+
+.ayurvibe-footer-hero {
+  min-height: 11.25rem;
+  background:
+    linear-gradient(155deg, rgba(11, 16, 28, 0.82), rgba(11, 16, 28, 0.92)),
+    url("https://images.unsplash.com/photo-1556228724-4d2bbf4f1784?auto=format&fit=crop&w=1400&q=80")
+      center / cover no-repeat;
+}
+
+@media (min-width: 641px) {
+  .ayurvibe-footer-hero {
+    min-height: 13.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-hero {
+    min-height: 378px;
+    background-image: url("https://stiletto-theme-glimmer.myshopify.com/cdn/shop/files/superfruit-aha-slide.jpg?v=1660018189&width=2600");
+    background-position: center right;
+  }
+
+  .ayurvibe-heroWrap {
+    min-height: 570px;
+    align-items: center;
+    padding-top: 2.45rem;
+    padding-bottom: 2.45rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+  }
+
+  .ayurvibe-heroEyebrow {
+    font-size: 0.74375rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ayurvibe-heroContent {
+    max-width: 33.25rem;
+  }
+
+  .ayurvibe-heroTitle {
+    font-size: clamp(2.8rem, 3.5vw, 3.71rem);
+  }
+
+  .ayurvibe-heroSubtitle {
+    font-size: clamp(1.05rem, 1.19vw, 1.4rem);
+    max-width: 29.75rem;
+  }
+
+  .ayurvibe-heroCta {
+    min-width: 6.2125rem;
+    min-height: 2.66875rem;
+    font-size: 0.8rem;
+  }
+
+  .ayurvibe-showcase {
+    padding-left: 1.05rem;
+    padding-right: 1.05rem;
+  }
+
+  .ayurvibe-showcaseHeading {
+    font-size: 2.1rem;
+  }
+
+  .ayurvibe-showcaseCopy {
+    font-size: 0.91rem;
+    max-width: 28rem;
+  }
+
+  .ayurvibe-showcaseGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.84rem;
+  }
+
+  .ayurvibe-showcaseCard {
+    min-height: 27.3rem;
+  }
+
+  .ayurvibe-showcaseTitle {
+    font-size: 1.96rem;
+  }
+
+  .ayurvibe-showcaseSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .ayurvibe-showcaseCta {
+    min-width: 6.825rem;
+    min-height: 2.625rem;
+    font-size: 1.33rem;
+  }
+
+  .ayurvibe-summerStrip {
+    padding: 0.7rem 0;
+  }
+
+  .ayurvibe-summerStripTrack {
+    gap: 1.05rem;
+    padding-top: 0.945rem;
+    padding-bottom: 0.945rem;
+    padding-left: 1.575rem;
+    padding-right: 1.575rem;
+  }
+
+  .ayurvibe-summerStripImage {
+    width: 7.35rem;
+    height: 7.35rem;
+  }
+
+  .ayurvibe-summerStripText {
+    font-size: 1.54rem;
+    line-height: 1.1;
+  }
+
+  .ayurvibe-bundle {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .ayurvibe-bundleIntro {
+    max-width: 35rem;
+  }
+
+  .ayurvibe-bundleTitle {
+    font-size: 2rem;
+  }
+
+  .ayurvibe-bundleSubtitle {
+    font-size: 1.1rem;
+    max-width: 33rem;
+  }
+
+  .ayurvibe-bundleCta {
+    min-height: 2.8rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-bundleHero {
+    min-height: 30rem;
+  }
+
+  .ayurvibe-bundleItemImage {
+    width: 7.6rem;
+    height: 8rem;
+  }
+
+  .ayurvibe-bundleItemTitle {
+    font-size: 1.45rem;
+  }
+
+  .ayurvibe-bundleItemPrice {
+    font-size: 1.3rem;
+  }
+
+  .ayurvibe-bundleQuickView {
+    min-height: 2.35rem;
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .ayurvibe-newArrivals {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.5rem;
+  }
+
+  .ayurvibe-arrivalCard {
+    width: 13rem;
+  }
+
+  .ayurvibe-arrivalImageWrap {
+    height: 18rem;
+  }
+
+  .ayurvibe-arrivalTitle {
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-arrivalPrice {
+    font-size: 0.9rem;
+  }
+
+  .ayurvibe-arrivalSizes {
+    font-size: 0.8rem;
+  }
+
+  .ayurvibe-scrubSaleOverlay {
+    padding: 2.1rem;
+  }
+
+  .ayurvibe-scrubSaleEyebrow {
+    font-size: 1.3rem;
+  }
+
+  .ayurvibe-scrubSalePercent {
+    font-size: 7rem;
+  }
+
+  .ayurvibe-scrubSalePercentSign {
+    font-size: 3.5rem;
+  }
+
+  .ayurvibe-scrubSaleFineprint {
+    font-size: 0.9rem;
+  }
+
+  .ayurvibe-scrubSaleTitle {
+    font-size: 2.25rem;
+  }
+
+  .ayurvibe-scrubSaleSubtitle {
+    font-size: 1.2rem;
+    max-width: 28rem;
+  }
+
+  .ayurvibe-scrubSaleCta {
+    min-height: 2.6rem;
+    min-width: 7.2rem;
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-skinConcerns {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .ayurvibe-skinConcernCard {
+    min-height: 25rem;
+  }
+
+  .ayurvibe-shopMinisPromo {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .ayurvibe-shopMinisPromoImage {
+    min-height: 23rem;
+  }
+
+  .ayurvibe-shopMinisPromoTitle {
+    font-size: 3rem;
+  }
+
+  .ayurvibe-shopMinisPromoSubtitle {
+    font-size: 1.5rem;
+  }
+
+  .ayurvibe-shopMinisPromoCopy {
+    font-size: 1.1rem;
+  }
+
+  .ayurvibe-shopMinisPromoCta {
+    min-height: 2.8rem;
+    min-width: 8rem;
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-shopType {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.6rem;
+  }
+
+  .ayurvibe-shopTypeCard {
+    width: 12.8rem;
+  }
+
+  .ayurvibe-shopTypeImage {
+    height: 12rem;
+  }
+
+  .ayurvibe-shopTypeFooter {
+    min-height: 2.5rem;
+  }
+
+  .ayurvibe-shopTypeTitle {
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-shopTypeArrow {
+    font-size: 1.45rem;
+  }
+
+  .ayurvibe-featuredSplitPanel,
+  .ayurvibe-featuredSplitImage {
+    min-height: 30rem;
+  }
+
+  .ayurvibe-featuredSplitText {
+    padding: 1.8rem;
+  }
+
+  .ayurvibe-featuredSplitTitle {
+    font-size: 2.7rem;
+  }
+
+  .ayurvibe-featuredSplitCopy {
+    font-size: 1.2rem;
+  }
+
+  .ayurvibe-featuredSplitCta {
+    min-height: 2.6rem;
+    min-width: 7.2rem;
+    font-size: 1rem;
+  }
+
+  .ayurvibe-quoteSpot {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 1.5rem;
+  }
+
+  .ayurvibe-quoteSpotImage {
+    min-height: 26rem;
+  }
+
+  .ayurvibe-quoteSpotQuote {
+    font-size: 1.55rem;
+  }
+
+  .ayurvibe-quoteSpotStars {
+    font-size: 1.5rem;
+  }
+
+  .ayurvibe-whyChoose {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .ayurvibe-whyChooseImage {
+    min-height: 24rem;
+  }
+
+  .ayurvibe-whyChooseTitle {
+    font-size: 1.85rem;
+  }
+
+  .ayurvibe-whyChooseText {
+    font-size: 1.3rem;
+  }
+
+  .ayurvibe-whyChooseCta {
+    min-height: 2.55rem;
+    font-size: 1rem;
+  }
+
+  .ayurvibe-blog {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .ayurvibe-blogImage {
+    min-height: 20rem;
+  }
+
+  .ayurvibe-blogBody {
+    width: calc(100% - 2rem);
+  }
+
+  .ayurvibe-blogTitle {
+    font-size: 1.9rem;
+  }
+
+  .ayurvibe-blogExcerpt {
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-communityPressGrid {
+    gap: 1rem;
+  }
+
+  .ayurvibe-communityPressSource {
+    font-size: 1.2rem;
+  }
+
+  .ayurvibe-communityPressQuote {
+    font-size: 0.82rem;
+  }
+
+  .ayurvibe-communityPressHero,
+  .ayurvibe-communityPressHeroOverlay {
+    min-height: 22rem;
+  }
+
+  .ayurvibe-communityPressTitle {
+    max-width: 30rem;
+    font-size: 1.8rem;
+  }
+
+  .ayurvibe-communityPressBottomText {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurvibe-heroWrap {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .ayurvibe-showcase {
+    padding-top: 2.45rem;
+    padding-bottom: 1.68rem;
+    padding-left: 2.975rem;
+    padding-right: 2.975rem;
+  }
+
+  .ayurvibe-showcaseIntro {
+    max-width: 36.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .ayurvibe-showcaseHeading {
+    font-size: 2.625rem;
+  }
+
+  .ayurvibe-showcaseCopy {
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
+    max-width: 30.1rem;
+    line-height: 1.35;
+  }
+
+  .ayurvibe-showcaseGrid {
+    margin-top: 1.75rem;
+    gap: 1.05rem;
+  }
+
+  .ayurvibe-showcaseCard {
+    min-height: 31.92rem;
+  }
+
+  .ayurvibe-showcaseBadge {
+    font-size: 0.875rem;
+  }
+
+  .ayurvibe-showcaseTitle {
+    font-size: 2.485rem;
+  }
+
+  .ayurvibe-showcaseSubtitle {
+    font-size: 1.54rem;
+  }
+
+  .ayurvibe-showcaseCta {
+    margin-top: 1.225rem;
+    min-width: 7.42rem;
+    min-height: 2.8rem;
+    font-size: 1.4rem;
+  }
+
+  .ayurvibe-summerStrip {
+    padding-top: 1.12rem;
+    padding-bottom: 1.12rem;
+  }
+
+  .ayurvibe-summerStripTrack {
+    gap: 3.15rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ayurvibe-summerStripImage {
+    width: 8.05rem;
+    height: 8.05rem;
+  }
+
+  .ayurvibe-summerStripText {
+    font-size: 2.87rem;
+  }
+
+  .ayurvibe-bundle {
+    padding-top: 2rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .ayurvibe-bundleLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+    column-gap: 1.8rem;
+    align-items: start;
+  }
+
+  .ayurvibe-bundleMain,
+  .ayurvibe-bundleProducts {
+    min-width: 0;
+  }
+
+  .ayurvibe-bundleProducts {
+    padding-top: 8.35rem;
+  }
+
+  .ayurvibe-bundleIntro {
+    max-width: 40rem;
+  }
+
+  .ayurvibe-bundleTitle {
+    font-size: 3rem;
+    line-height: 1.08;
+  }
+
+  .ayurvibe-bundleSubtitle {
+    margin-top: 0.65rem;
+    font-size: 1.06rem;
+    line-height: 1.45;
+    max-width: 41rem;
+  }
+
+  .ayurvibe-bundleCta {
+    margin-top: 1rem;
+    min-height: 2.6rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 1rem;
+    border-color: #6b7e86;
+  }
+
+  .ayurvibe-bundleHero {
+    margin-top: 1.25rem;
+    min-height: 56.5rem;
+  }
+
+  .ayurvibe-bundleList {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .ayurvibe-bundleItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding: 0.95rem 1.15rem 0.9rem;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .ayurvibe-bundleItem:nth-child(odd) {
+    border-right: 1px solid #cdcdcd;
+  }
+
+  .ayurvibe-bundleItem:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .ayurvibe-bundleItemImage {
+    width: 12rem;
+    height: 17rem;
+    object-position: center;
+  }
+
+  .ayurvibe-bundleItemContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ayurvibe-bundleItemTitle {
+    margin-top: 0.8rem;
+    font-size: 1.04rem;
+    line-height: 1.3;
+    max-width: 17rem;
+  }
+
+  .ayurvibe-bundleItemPrice {
+    margin-top: 0.25rem;
+    margin-bottom: 0;
+    font-size: 1.03rem;
+    line-height: 1.25;
+  }
+
+  .ayurvibe-bundleQuickView {
+    margin-top: 0.65rem;
+    min-height: 2rem;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+    font-size: 0.92rem;
+    background: transparent;
+    border-color: #acb4b8;
+  }
+
+  .ayurvibe-newArrivals {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .ayurvibe-newArrivalsHeader {
+    margin-bottom: 1.2rem;
+  }
+
+  .ayurvibe-newArrivalsTitle {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .ayurvibe-newArrivalsTrack {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.1rem;
+    overflow: visible;
+  }
+
+  .ayurvibe-arrivalCard {
+    width: 100%;
+  }
+
+  .ayurvibe-arrivalImageWrap {
+    height: 30rem;
+  }
+
+  .ayurvibe-arrivalBadge {
+    font-size: 1.05rem;
+    padding: 0.3rem 0.42rem;
+  }
+
+  .ayurvibe-arrivalMeta {
+    padding-top: 0.85rem;
+  }
+
+  .ayurvibe-arrivalTitle {
+    font-size: 2rem;
+    line-height: 1.25;
+    min-height: 5rem;
+  }
+
+  .ayurvibe-arrivalPrice {
+    font-size: 1.9rem;
+  }
+
+  .ayurvibe-arrivalSizes {
+    font-size: 1.45rem;
+  }
+
+  .ayurvibe-scrubSaleOverlay {
+    padding: 3rem 3.9rem;
+  }
+
+  .ayurvibe-scrubSaleContent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+    align-items: center;
+    column-gap: 4.2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+
+  .ayurvibe-scrubSaleDivider {
+    width: 1px;
+    border-top: 0;
+    min-height: 13rem;
+    background: #d8f1a6;
+    margin: 0;
+  }
+
+  .ayurvibe-scrubSalePercent {
+    margin-top: 0.3rem;
+    font-size: 7.2rem;
+  }
+
+  .ayurvibe-scrubSalePercentSign {
+    font-size: 3.4rem;
+    margin-left: 0.35rem;
+  }
+
+  .ayurvibe-scrubSaleEyebrow {
+    font-size: 1.2rem;
+  }
+
+  .ayurvibe-scrubSaleFineprint {
+    margin-top: 0.55rem;
+    font-size: 0.72rem;
+  }
+
+  .ayurvibe-scrubSaleTitle {
+    font-size: 2.15rem;
+  }
+
+  .ayurvibe-scrubSaleSubtitle {
+    margin-top: 0.55rem;
+    font-size: 1.1rem;
+    max-width: 26rem;
+  }
+
+  .ayurvibe-scrubSaleCta {
+    margin-top: 1.45rem;
+    min-width: 7rem;
+    min-height: 2.7rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .ayurvibe-skinConcerns {
+    padding-top: 2.1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.2rem;
+  }
+
+  .ayurvibe-skinConcernsHeading {
+    font-size: 2.9rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .ayurvibe-skinConcernsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .ayurvibe-skinConcernCard {
+    min-height: 25.5rem;
+  }
+
+  .ayurvibe-skinConcernContent {
+    bottom: 1.35rem;
+    width: 80%;
+  }
+
+  .ayurvibe-skinConcernTitle {
+    font-size: 2.25rem;
+  }
+
+  .ayurvibe-skinConcernCta {
+    margin-top: 0.75rem;
+    min-width: 8rem;
+    min-height: 2.1rem;
+    font-size: 0.85rem;
+    padding: 0.33rem 0.9rem;
+  }
+
+  .ayurvibe-shopMinisPromo {
+    padding-top: 1.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .ayurvibe-shopMinisPromoLayout {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 2.4rem;
+  }
+
+  .ayurvibe-shopMinisPromoImage {
+    min-height: 51rem;
+  }
+
+  .ayurvibe-shopMinisPromoContent {
+    max-width: 35rem;
+  }
+
+  .ayurvibe-shopMinisPromoTitle {
+    font-size: 4.1rem;
+  }
+
+  .ayurvibe-shopMinisPromoSubtitle {
+    margin-top: 0.85rem;
+    font-size: 2.4rem;
+  }
+
+  .ayurvibe-shopMinisPromoCopy {
+    margin-top: 0.8rem;
+    font-size: 1.28rem;
+    max-width: 31rem;
+  }
+
+  .ayurvibe-shopMinisPromoActions {
+    margin-top: 1.5rem;
+    gap: 0.9rem;
+  }
+
+  .ayurvibe-shopMinisPromoCta {
+    min-height: 3.25rem;
+    min-width: 10.4rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  .ayurvibe-shopType {
+    padding-top: 1.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .ayurvibe-shopTypeHeader {
+    margin-bottom: 1rem;
+  }
+
+  .ayurvibe-shopTypeHeading {
+    font-size: 3rem;
+  }
+
+  .ayurvibe-shopTypeTrack {
+    gap: 1rem;
+  }
+
+  .ayurvibe-shopTypeCard {
+    width: 22.6rem;
+  }
+
+  .ayurvibe-shopTypeImage {
+    height: 20.5rem;
+  }
+
+  .ayurvibe-shopTypeFooter {
+    min-height: 3rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .ayurvibe-shopTypeTitle {
+    font-size: 1.75rem;
+  }
+
+  .ayurvibe-shopTypeArrow {
+    font-size: 2rem;
+  }
+
+  .ayurvibe-featuredSplitGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ayurvibe-featuredSplitPanel,
+  .ayurvibe-featuredSplitImage {
+    min-height: 41rem;
+  }
+
+  .ayurvibe-featuredSplitText {
+    padding: 2.6rem;
+  }
+
+  .ayurvibe-featuredSplitEyebrow {
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-featuredSplitTitle {
+    margin-top: 0.7rem;
+    font-size: 4rem;
+    max-width: 36rem;
+  }
+
+  .ayurvibe-featuredSplitCopy {
+    margin-top: 0.85rem;
+    font-size: 1.2rem;
+    max-width: 36rem;
+  }
+
+  .ayurvibe-featuredSplitCta {
+    margin-top: 1.2rem;
+    min-width: 8.2rem;
+    min-height: 2.8rem;
+    font-size: 1.35rem;
+  }
+
+  .ayurvibe-quoteSpot {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .ayurvibe-quoteSpotLayout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 2.6rem;
+    align-items: center;
+  }
+
+  .ayurvibe-quoteSpotVisualWrap {
+    grid-column: 2;
+  }
+
+  .ayurvibe-quoteSpotContent {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 0;
+    max-width: 42rem;
+  }
+
+  .ayurvibe-quoteSpotImage {
+    min-height: 41rem;
+  }
+
+  .ayurvibe-quoteSpotLabel {
+    margin-top: 0.75rem;
+    font-size: 1.9rem;
+  }
+
+  .ayurvibe-quoteSpotArrows {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    margin-top: 0;
+  }
+
+  .ayurvibe-quoteSpotArrow {
+    pointer-events: auto;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 2.7rem;
+    color: #173f47;
+  }
+
+  .ayurvibe-quoteSpotStars {
+    font-size: 2.2rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ayurvibe-quoteSpotQuote {
+    margin-top: 1rem;
+    font-size: 3.2rem;
+    max-width: 43rem;
+    line-height: 1.3;
+  }
+
+  .ayurvibe-quoteSpotAuthor {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #37484c;
+  }
+
+  .ayurvibe-whyChoose {
+    padding-top: 2.1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.4rem;
+  }
+
+  .ayurvibe-whyChooseHeading {
+    font-size: 2.95rem;
+  }
+
+  .ayurvibe-whyChooseGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+
+  .ayurvibe-whyChooseImage {
+    min-height: 27rem;
+  }
+
+  .ayurvibe-whyChooseBody {
+    padding-top: 0.9rem;
+  }
+
+  .ayurvibe-whyChooseTitle {
+    font-size: 2rem;
+    line-height: 1.22;
+  }
+
+  .ayurvibe-whyChooseText {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .ayurvibe-whyChooseCta {
+    margin-top: 0.95rem;
+    min-height: 2.35rem;
+    min-width: 7rem;
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-blog {
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.3rem;
+  }
+
+  .ayurvibe-blogHeading {
+    font-size: 3rem;
+  }
+
+  .ayurvibe-blogViewAll {
+    margin-top: 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-blogGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .ayurvibe-blogCard {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+    gap: 1.2rem;
+    align-items: start;
+  }
+
+  .ayurvibe-blogImage {
+    min-height: 24rem;
+  }
+
+  .ayurvibe-blogBody {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+  }
+
+  .ayurvibe-blogTitle {
+    margin-top: 0.95rem;
+    font-size: 2.1rem;
+    max-width: 26rem;
+  }
+
+  .ayurvibe-blogDate {
+    margin-top: 0.55rem;
+    font-size: 1rem;
+  }
+
+  .ayurvibe-blogExcerpt {
+    margin-top: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .ayurvibe-blogReadMore {
+    margin-top: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-communityPressTop {
+    padding: 1.7rem 3rem;
+  }
+
+  .ayurvibe-communityPressGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .ayurvibe-communityPressSource {
+    font-size: 1.18rem;
+  }
+
+  .ayurvibe-communityPressQuote {
+    margin-top: 0.6rem;
+    font-size: 0.62rem;
+    line-height: 1.45;
+  }
+
+  .ayurvibe-communityPressHero,
+  .ayurvibe-communityPressHeroOverlay {
+    min-height: 23rem;
+  }
+
+  .ayurvibe-communityPressTitle {
+    margin-top: 0.85rem;
+    max-width: 41rem;
+    font-size: 1.55rem;
+    line-height: 1.3;
+  }
+
+  .ayurvibe-communityPressCta {
+    margin-top: 1rem;
+    min-height: 2.4rem;
+    min-width: 7rem;
+    font-size: 0.9rem;
+  }
+
+  .ayurvibe-communityPressBottom {
+    padding: 1.35rem 1rem;
+  }
+
+  .ayurvibe-communityPressBottomText {
+    font-size: 1.9rem;
+  }
+}
+
+.productpage {
+  letter-spacing: 0;
+  color: #1f3e46;
+}
+
+.productpage h1,
+.productpage h2,
+.productpage h3,
+.productpage p,
+.productpage button {
+  font-weight: 400;
+}
+
+.ayurvibe-productHeroMain {
+  display: contents;
+}
+
+.ayurvibe-productHeroVisual {
+  order: 1;
+  width: 100%;
+}
+
+.ayurvibe-productInfo {
+  order: 2;
+  color: #1f3e46;
+}
+
+.ayurvibe-productDetails {
+  order: 3;
+}
+
+.ayurvibe-productMobileGallery {
+  gap: 6px;
+}
+
+.ayurvibe-productMobileGalleryItem,
+.ayurvibe-productDesktopImageWrap {
+  background: #e4e4e4;
+}
+
+.ayurvibe-productMobileGalleryImage,
+.ayurvibe-productDesktopImage,
+.ayurvibe-productThumbImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ayurvibe-productBadge {
+  border: 1px solid #6f8388;
+  padding: 2px 4px 1px;
+  font-size: 10px;
+  line-height: 1;
+  color: #24424a;
+}
+
+.ayurvibe-productTitle {
+  margin: 10px 0 0;
+  font-size: 1.95rem;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: #17363f;
+}
+
+.ayurvibe-productPrice {
+  margin: 10px 0 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: #17363f;
+}
+
+.ayurvibe-productSummary {
+  margin: 18px 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #27464d;
+}
+
+.ayurvibe-productSizeLabel,
+.ayurvibe-productQuantityLabel,
+.ayurvibe-productAvailabilityTitle {
+  margin: 18px 0 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  color: #2a4950;
+}
+
+.ayurvibe-productSizeValue {
+  color: #6a7b80;
+}
+
+.productpage-sizeBtn {
+  height: 44px;
+  border-width: 1px;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.ayurvibe-productQtyWrap {
+  margin-top: 10px;
+}
+
+.productpage-qtyBtn {
+  width: 42px;
+  height: 42px;
+  border: 0;
+  background: transparent;
+  color: #29424a;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.productpage-qtyValue {
+  width: 42px;
+  text-align: center;
+  color: #29424a;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.ayurvibe-productAvailabilityText {
+  margin: 6px 0 0;
+  font-size: 0.98rem;
+  line-height: 1.3;
+  color: #b58222;
+}
+
+.ayurvibe-productAvailabilityTrack {
+  margin-top: 10px;
+  height: 3px;
+}
+
+.ayurvibe-productAvailabilityFill {
+  width: 11%;
+}
+
+.ayurvibe-productAddToBag {
+  margin-top: 18px;
+  height: 48px;
+  border: 0;
+  background: #083b43;
+  color: #d3ed97;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.ayurvibe-productMetaBox {
+  margin-top: 16px;
+  border-color: #ccd0d2;
+  padding: 12px 14px;
+  color: #2d4a4f;
+}
+
+.ayurvibe-productMetaRow {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.ayurvibe-productMetaDivider {
+  margin: 9px 0;
+  border-color: #ccd0d2;
+}
+
+.ayurvibe-productPerk {
+  font-size: 1rem;
+  line-height: 1.35;
+  color: #29464c;
+}
+
+.ayurvibe-productPerkIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.ayurvibe-productShare {
+  margin-top: 18px;
+  font-size: 1rem;
+  color: #27444c;
+}
+
+.ayurvibe-productDetails {
+  margin-top: 26px;
+  border-top-color: #c8ced0;
+}
+
+.ayurvibe-productAccordionHeader,
+.ayurvibe-productPairsHeader {
+  border: 0;
+  background: transparent;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.ayurvibe-productAccordionTitle,
+.ayurvibe-productPairsTitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #14353e;
+}
+
+.ayurvibe-productAccordionIcon,
+.ayurvibe-productPairsIcon {
+  font-size: 1.9rem;
+  line-height: 1;
+  color: #27444c;
+}
+
+.ayurvibe-productAccordionBody {
+  margin: 0;
+  padding-bottom: 14px;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: #1f3f47;
+}
+
+.ayurvibe-productAccordionContent,
+.ayurvibe-productPairsContent,
+.ayurvibe-productFaqContent {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 220ms ease;
+}
+
+.ayurvibe-productAccordionContent.is-open,
+.ayurvibe-productPairsContent.is-open,
+.ayurvibe-productFaqContent.is-open {
+  max-height: 1200px;
+  opacity: 1;
+}
+
+.ayurvibe-productPairs {
+  padding-bottom: 10px;
+}
+
+.ayurvibe-productPairsTrack {
+  padding-bottom: 3px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-productPairsTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.productpage-recommendCard {
+  width: 46%;
+  min-width: 46%;
+}
+
+.productpage-recommendCard > div:first-child {
+  height: 168px;
+}
+
+.ayurvibe-productRecommendTitle {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: #334a50;
+}
+
+.ayurvibe-productRecommendPrice {
+  margin: 4px 0 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #334a50;
+}
+
+.ayurvibe-productRecommendCompare {
+  color: #8d9295;
+}
+
+.ayurvibe-productRecommendCta {
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  color: #32484e;
+}
+
+.ayurvibe-productValues,
+.ayurvibe-productPromise,
+.ayurvibe-productFaq,
+.ayurvibe-productVideoBanner,
+.ayurvibe-productAlsoLike {
+  margin-top: 24px;
+}
+
+.ayurvibe-productValues {
+  padding: 30px 8px 34px;
+  background: #ececec;
+}
+
+.ayurvibe-productValueItem {
+  max-width: 420px;
+  color: #1b3f43;
+}
+
+.ayurvibe-productValueIconWrap {
+  width: 42px;
+  height: 42px;
+  color: #1b3f43;
+}
+
+.ayurvibe-productValueIconWrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ayurvibe-productValueTitle {
+  margin: 14px 0 0;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #1d3f43;
+}
+
+.ayurvibe-productValueText {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #334f53;
+}
+
+.ayurvibe-productPromise {
+  background: #ececec;
+}
+
+.ayurvibe-productPromiseImage {
+  width: 100%;
+  height: 352px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.ayurvibe-productPromiseContent {
+  background: #07363d;
+  padding: 20px 14px;
+  color: #f7fbfc;
+}
+
+.ayurvibe-productPromiseTitle {
+  margin: 0;
+  font-size: 1.85rem;
+  line-height: 1.12;
+  color: #f4fafb;
+}
+
+.ayurvibe-productPromiseDivider {
+  margin: 14px 0 16px;
+  border-top: 1px solid rgba(244, 250, 251, 0.85);
+}
+
+.ayurvibe-productPromiseList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ayurvibe-productPromiseList li {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #f4fafb;
+}
+
+.ayurvibe-productPromiseList li + li {
+  margin-top: 6px;
+}
+
+.ayurvibe-productFaq {
+  padding: 0 12px 20px;
+  background: #ececec;
+}
+
+.ayurvibe-productFaqTitle {
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  color: #0f3340;
+}
+
+.ayurvibe-productFaqList {
+  margin-top: 14px;
+  border-top: 1px solid #bfc7ca;
+  border-bottom: 1px solid #bfc7ca;
+}
+
+.ayurvibe-productFaqItem {
+  border-top: 1px solid #bfc7ca;
+}
+
+.ayurvibe-productFaqItem:first-child {
+  border-top: 0;
+}
+
+.ayurvibe-productFaqTrigger {
+  width: 100%;
+  min-height: 66px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 10px 2px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.ayurvibe-productFaqQuestion {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #133640;
+  max-width: 90%;
+}
+
+.ayurvibe-productFaqIcon {
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #2a474f;
+}
+
+.ayurvibe-productFaqAnswer {
+  margin: 0;
+  padding: 0 2px 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #345158;
+}
+
+.ayurvibe-productVideoBanner {
+  position: relative;
+  height: 378px;
+  overflow: hidden;
+  background: #d9d9d9;
+}
+
+.ayurvibe-productVideoBannerMedia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 64% center;
+}
+
+.ayurvibe-productVideoBannerOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+}
+
+.ayurvibe-productVideoBannerTitle {
+  margin: 0;
+  max-width: 12ch;
+  font-size: 2.2rem;
+  line-height: 1.08;
+  text-align: center;
+  color: #bdf37b;
+}
+
+.ayurvibe-productAlsoLike {
+  background: #ececec;
+  padding: 0 0 8px;
+}
+
+.ayurvibe-productAlsoLikeHeader {
+  margin-bottom: 10px;
+}
+
+.ayurvibe-productAlsoLikeTitle {
+  font-size: 1.95rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.ayurvibe-productAlsoLikeTrack {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-productAlsoLikeTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.ayurvibe-productAlsoLikeCard {
+  width: 10.75rem;
+  min-width: 10.75rem;
+}
+
+.ayurvibe-productAlsoLikeImageWrap {
+  height: 15rem;
+}
+
+.ayurvibe-productAlsoLikeCard .ayurvibe-arrivalTitle {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  min-height: auto;
+}
+
+.ayurvibe-productAlsoLikeCard .ayurvibe-arrivalPrice {
+  font-size: 1rem;
+}
+
+.ayurvibe-productAlsoLikeCard .ayurvibe-arrivalSizes {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .productpage-topGrid {
+    align-items: start;
+  }
+
+  .ayurvibe-productHeroMain {
+    display: block;
+    min-width: 0;
+  }
+
+  .ayurvibe-productHeroVisual {
+    display: grid;
+    grid-template-columns: 66px minmax(0, 1fr);
+    align-items: start;
+    gap: 14px;
+  }
+
+  .ayurvibe-productThumbs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ayurvibe-productThumb {
+    width: 66px;
+    height: 66px;
+    border-width: 1px;
+    background: #e4e4e4;
+  }
+
+  .ayurvibe-productMedia {
+    min-width: 0;
+  }
+
+  .ayurvibe-productDesktopImageWrap {
+    aspect-ratio: 1 / 1;
+  }
+
+  .ayurvibe-productTitle {
+    font-size: 2.35rem;
+  }
+
+  .ayurvibe-productPrice {
+    font-size: 1.75rem;
+  }
+
+  .ayurvibe-productSummary {
+    font-size: 1rem;
+    max-width: 32ch;
+  }
+
+  .ayurvibe-productSizeLabel,
+  .ayurvibe-productQuantityLabel,
+  .ayurvibe-productAvailabilityTitle {
+    font-size: 1rem;
+  }
+
+  .ayurvibe-productAvailabilityText {
+    font-size: 0.95rem;
+  }
+
+  .productpage-sizeBtn {
+    height: 38px;
+    font-size: 0.95rem;
+  }
+
+  .productpage-qtyBtn {
+    width: 34px;
+    height: 34px;
+    font-size: 1rem;
+  }
+
+  .productpage-qtyValue {
+    width: 30px;
+    font-size: 0.9rem;
+  }
+
+  .ayurvibe-productAddToBag {
+    height: 44px;
+    font-size: 1.1rem;
+  }
+
+  .ayurvibe-productMetaRow,
+  .ayurvibe-productPerk,
+  .ayurvibe-productShare {
+    font-size: 0.9rem;
+  }
+
+  .ayurvibe-productPerkIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ayurvibe-productDetails {
+    margin-top: 22px;
+  }
+
+  .ayurvibe-productAccordionTitle,
+  .ayurvibe-productPairsTitle {
+    font-size: 20px;
+  }
+
+  .ayurvibe-productAccordionIcon,
+  .ayurvibe-productPairsIcon {
+    font-size: 1.6rem;
+  }
+
+  .ayurvibe-productAccordionBody {
+    font-size: 1rem;
+  }
+
+  .productpage-recommendCard {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .productpage-recommendCard > div:first-child {
+    height: 272px;
+  }
+
+  .ayurvibe-productRecommendTitle {
+    font-size: 1rem;
+  }
+
+  .ayurvibe-productRecommendPrice {
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-productValues {
+    padding: 44px 18px 50px;
+  }
+
+  .ayurvibe-productValueItem {
+    max-width: 320px;
+  }
+
+  .ayurvibe-productValueIconWrap {
+    width: 48px;
+    height: 48px;
+  }
+
+  .ayurvibe-productValueTitle {
+    font-size: 1.8rem;
+  }
+
+  .ayurvibe-productValueText {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ayurvibe-productPromiseImage {
+    height: 420px;
+  }
+
+  .ayurvibe-productPromiseContent {
+    padding: 24px 16px 22px;
+  }
+
+  .ayurvibe-productPromiseTitle {
+    font-size: 1.8rem;
+  }
+
+  .ayurvibe-productFaq {
+    padding: 0 0 24px;
+  }
+
+  .ayurvibe-productFaqTitle {
+    font-size: 1.95rem;
+  }
+
+  .ayurvibe-productFaqTrigger {
+    min-height: 74px;
+    padding: 12px 0;
+  }
+
+  .ayurvibe-productFaqQuestion {
+    font-size: 16px;
+    max-width: 94%;
+  }
+
+  .ayurvibe-productFaqAnswer {
+    padding: 0 0 14px;
+    font-size: 0.95rem;
+  }
+
+  .ayurvibe-productVideoBanner {
+    height: 430px;
+  }
+
+  .ayurvibe-productVideoBannerMedia {
+    object-position: center;
+  }
+
+  .ayurvibe-productVideoBannerTitle {
+    max-width: none;
+    font-size: 2.5rem;
+  }
+
+  .ayurvibe-productAlsoLike {
+    padding-bottom: 14px;
+  }
+
+  .ayurvibe-productAlsoLikeTitle {
+    font-size: 2.1rem;
+  }
+
+  .ayurvibe-productAlsoLikeTrack {
+    gap: 12px;
+  }
+
+  .ayurvibe-productAlsoLikeCard {
+    width: 16.25rem;
+    min-width: 16.25rem;
+  }
+
+  .ayurvibe-productAlsoLikeImageWrap {
+    height: 21rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ayurvibe-productPromise {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: stretch;
+    background: #07363d;
+  }
+
+  .ayurvibe-productPromiseMedia {
+    order: 2;
+    min-height: 520px;
+  }
+
+  .ayurvibe-productPromiseImage {
+    height: 100%;
+    min-height: 520px;
+  }
+
+  .ayurvibe-productPromiseContent {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 54px 52px 52px;
+  }
+
+  .ayurvibe-productPromiseTitle {
+    font-size: 1.95rem;
+  }
+
+  .ayurvibe-productPromiseList li {
+    font-size: 1.25rem;
+  }
+
+  .ayurvibe-productFaqTitle {
+    font-size: 2.1rem;
+  }
+
+  .ayurvibe-productFaqQuestion {
+    font-size: 18px;
+  }
+
+  .ayurvibe-productFaqIcon {
+    font-size: 2.2rem;
+  }
+
+  .ayurvibe-productFaqAnswer {
+    font-size: 1rem;
+  }
+
+  .ayurvibe-productVideoBanner {
+    height: 435px;
+  }
+
+  .ayurvibe-productVideoBannerTitle {
+    font-size: 2.85rem;
+  }
+
+  .ayurvibe-productAlsoLikeTitle {
+    font-size: 2.35rem;
+  }
+
+  .ayurvibe-productAlsoLikeCard {
+    width: 18.25rem;
+    min-width: 18.25rem;
+  }
+
+  .ayurvibe-productAlsoLikeImageWrap {
+    height: 27.5rem;
+  }
+}
+
+.ayurvibe-cartPage {
+  color: #17363f;
+}
+
+.ayurvibe-cartEyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #31515a;
+}
+
+.ayurvibe-cartTitle {
+  margin: 8px 0 0;
+  font-size: 2rem;
+  line-height: 1.05;
+  font-weight: 400;
+  color: #153740;
+}
+
+.ayurvibe-cartSubtitle {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  color: #44626a;
+}
+
+.ayurvibe-cartItemGrid {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.ayurvibe-cartItemImage {
+  width: 90px;
+  height: 110px;
+  object-fit: cover;
+  background: #e2e2e2;
+}
+
+.ayurvibe-cartItemTitle {
+  margin: 0;
+  font-size: 1.03rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #17363f;
+}
+
+.ayurvibe-cartItemMeta {
+  margin: 5px 0 0;
+  font-size: 0.88rem;
+  color: #6c7f84;
+}
+
+.ayurvibe-cartRemove {
+  margin-top: 10px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #37555d;
+  font-size: 0.85rem;
+  text-decoration: underline;
+}
+
+.ayurvibe-cartQtyWrap {
+  margin-top: 12px;
+}
+
+.ayurvibe-cartQtyControl {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #c8d0d3;
+  background: #ececec;
+}
+
+.ayurvibe-cartQtyBtn {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: transparent;
+  font-size: 1.1rem;
+  color: #24444c;
+}
+
+.ayurvibe-cartQtyValue {
+  width: 34px;
+  text-align: center;
+  font-size: 0.92rem;
+  color: #24444c;
+}
+
+.ayurvibe-cartLinePrice {
+  margin: 10px 0 0;
+  font-size: 1.05rem;
+  color: #1b3f47;
+}
+
+.ayurvibe-cartSummaryTitle {
+  margin: 0;
+  font-size: 1.55rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.ayurvibe-cartSummaryRows {
+  margin-top: 16px;
+  border-top: 1px solid #c9d1d4;
+  border-bottom: 1px solid #c9d1d4;
+  padding: 12px 0;
+}
+
+.ayurvibe-cartSummaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.98rem;
+  color: #32535b;
+}
+
+.ayurvibe-cartSummaryRow + .ayurvibe-cartSummaryRow {
+  margin-top: 7px;
+}
+
+.ayurvibe-cartSummaryRow.is-total {
+  margin-top: 10px;
+  font-size: 1.15rem;
+  color: #163b45;
+}
+
+.ayurvibe-cartNoteLabel {
+  display: block;
+  margin-top: 14px;
+  font-size: 0.92rem;
+  color: #37575f;
+}
+
+.ayurvibe-cartNoteInput {
+  margin-top: 7px;
+  width: 100%;
+  border: 1px solid #bec9cc;
+  background: #f1f4f5;
+  padding: 10px 11px;
+  font-size: 0.9rem;
+  color: #1e434c;
+  resize: vertical;
+}
+
+.ayurvibe-cartCheckout {
+  margin-top: 14px;
+  width: 100%;
+  min-height: 46px;
+  border: 0;
+  background: #083b43;
+  color: #d7f2a3;
+  font-size: 1.14rem;
+}
+
+.ayurvibe-cartShippingHint {
+  margin: 10px 0 0;
+  font-size: 0.86rem;
+  color: #537078;
+}
+
+.ayurvibe-cartRecommendationsTitle {
+  margin: 0;
+  font-size: 1.85rem;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #113741;
+}
+
+.ayurvibe-cartRecommendationsTrack {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-cartRecommendationsTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.ayurvibe-cartRecoCard {
+  width: 10.75rem;
+  min-width: 10.75rem;
+}
+
+.ayurvibe-cartRecoImageWrap {
+  height: 15rem;
+  background: #e5e5e5;
+}
+
+.ayurvibe-cartRecoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurvibe-cartRecoName {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #25474f;
+}
+
+.ayurvibe-cartRecoPrice {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #5c6d71;
+}
+
+.ayurvibe-cartRecoCta {
+  margin-top: 8px;
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #c4cccf;
+  background: transparent;
+  color: #2f4f57;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-cartTitle {
+    font-size: 2.45rem;
+  }
+
+  .ayurvibe-cartSubtitle {
+    font-size: 1.05rem;
+  }
+
+  .ayurvibe-cartItemGrid {
+    grid-template-columns: 110px minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ayurvibe-cartItemImage {
+    width: 110px;
+    height: 132px;
+  }
+
+  .ayurvibe-cartQtyWrap {
+    margin-top: 0;
+  }
+
+  .ayurvibe-cartLinePrice {
+    margin: 0;
+    font-size: 1.1rem;
+    min-width: 86px;
+    text-align: right;
+  }
+
+  .ayurvibe-cartSummaryTitle {
+    font-size: 1.65rem;
+  }
+
+  .ayurvibe-cartRecommendationsTitle {
+    font-size: 2.2rem;
+  }
+
+  .ayurvibe-cartRecommendationsTrack {
+    gap: 12px;
+  }
+
+  .ayurvibe-cartRecoCard {
+    width: 16.25rem;
+    min-width: 16.25rem;
+  }
+
+  .ayurvibe-cartRecoImageWrap {
+    height: 21rem;
+  }
+}
+
+.ayurvibe-orderPage {
+  color: #17363f;
+}
+
+.ayurvibe-orderEyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #36575f;
+}
+
+.ayurvibe-orderTitle {
+  margin: 8px 0 0;
+  font-size: 2rem;
+  line-height: 1.06;
+  font-weight: 400;
+  color: #123841;
+}
+
+.ayurvibe-orderCopy {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  line-height: 1.45;
+  max-width: 54ch;
+  color: #264951;
+}
+
+.ayurvibe-orderHeroMeta {
+  margin-top: 12px;
+}
+
+.ayurvibe-orderHeroMeta p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #3b5d64;
+}
+
+.ayurvibe-orderHeroMeta p + p {
+  margin-top: 4px;
+}
+
+.ayurvibe-orderHeroActions {
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ayurvibe-orderPrimaryBtn,
+.ayurvibe-orderSecondaryBtn {
+  min-height: 42px;
+  font-size: 0.95rem;
+  padding: 0 14px;
+}
+
+.ayurvibe-orderPrimaryBtn {
+  border: 0;
+  background: #083b43;
+  color: #d7f2a3;
+}
+
+.ayurvibe-orderSecondaryBtn {
+  border: 1px solid #b8c7cb;
+  background: transparent;
+  color: #234950;
+}
+
+.ayurvibe-orderCardTitle {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.12;
+  font-weight: 400;
+  color: #143840;
+}
+
+.ayurvibe-orderItemGrid {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.ayurvibe-orderItemImage {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  background: #e3e3e3;
+}
+
+.ayurvibe-orderItemTitle {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #1e434b;
+}
+
+.ayurvibe-orderItemMeta {
+  margin: 5px 0 0;
+  font-size: 0.88rem;
+  color: #6a7f84;
+}
+
+.ayurvibe-orderItemPrice {
+  margin: 8px 0 0;
+  font-size: 0.96rem;
+  color: #284b53;
+}
+
+.ayurvibe-orderAddress {
+  margin: 12px 0 0;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: #2f5158;
+}
+
+.ayurvibe-orderSummaryRows {
+  margin-top: 12px;
+  border-top: 1px solid #c8d1d4;
+  border-bottom: 1px solid #c8d1d4;
+  padding: 10px 0;
+}
+
+.ayurvibe-orderSummaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #35575e;
+}
+
+.ayurvibe-orderSummaryRow + .ayurvibe-orderSummaryRow {
+  margin-top: 6px;
+}
+
+.ayurvibe-orderSummaryRow.is-total {
+  margin-top: 10px;
+  font-size: 1.12rem;
+  color: #163b45;
+}
+
+.ayurvibe-orderTimeline {
+  margin-top: 14px;
+}
+
+.ayurvibe-orderTimelineTitle {
+  margin: 0;
+  font-size: 1.02rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #143841;
+}
+
+.ayurvibe-orderTimelineItem {
+  margin: 7px 0 0;
+  font-size: 0.9rem;
+  color: #45666e;
+}
+
+.ayurvibe-orderSuggestTitle {
+  margin: 0;
+  font-size: 1.82rem;
+  line-height: 1.1;
+  font-weight: 400;
+  color: #123841;
+}
+
+.ayurvibe-orderSuggestTrack {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ayurvibe-orderSuggestTrack::-webkit-scrollbar {
+  display: none;
+}
+
+.ayurvibe-orderSuggestCard {
+  width: 10.75rem;
+  min-width: 10.75rem;
+}
+
+.ayurvibe-orderSuggestImageWrap {
+  height: 15rem;
+  background: #e4e4e4;
+}
+
+.ayurvibe-orderSuggestImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ayurvibe-orderSuggestName {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #25474f;
+}
+
+.ayurvibe-orderSuggestPrice {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #5c6d71;
+}
+
+.ayurvibe-orderSuggestBtn {
+  margin-top: 8px;
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #c4cccf;
+  background: transparent;
+  color: #2f4f57;
+  font-size: 0.82rem;
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-orderTitle {
+    font-size: 2.45rem;
+  }
+
+  .ayurvibe-orderHeroActions {
+    margin-top: 16px;
+    gap: 10px;
+  }
+
+  .ayurvibe-orderPrimaryBtn,
+  .ayurvibe-orderSecondaryBtn {
+    min-height: 44px;
+    font-size: 1rem;
+  }
+
+  .ayurvibe-orderCardTitle {
+    font-size: 1.58rem;
+  }
+
+  .ayurvibe-orderItemGrid {
+    grid-template-columns: 92px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .ayurvibe-orderItemImage {
+    width: 92px;
+    height: 114px;
+  }
+
+  .ayurvibe-orderItemPrice {
+    margin: 0;
+    min-width: 72px;
+    text-align: right;
+  }
+
+  .ayurvibe-orderSuggestTitle {
+    font-size: 2.2rem;
+  }
+
+  .ayurvibe-orderSuggestTrack {
+    gap: 12px;
+  }
+
+  .ayurvibe-orderSuggestCard {
+    width: 16.25rem;
+    min-width: 16.25rem;
+  }
+
+  .ayurvibe-orderSuggestImageWrap {
+    height: 21rem;
+  }
+}
+
+.ayurvibe-orderHistoryPage {
+  color: #17363f;
+}
+
+.ayurvibe-orderHistoryEyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #36575f;
+}
+
+.ayurvibe-orderHistoryTitle {
+  margin: 8px 0 0;
+  font-size: 2rem;
+  line-height: 1.06;
+  font-weight: 400;
+  color: #123841;
+}
+
+.ayurvibe-orderHistorySubtitle {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  color: #44626a;
+}
+
+.ayurvibe-orderHistoryCardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ayurvibe-orderHistoryOrderId {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #17363f;
+}
+
+.ayurvibe-orderHistoryMeta {
+  margin: 4px 0 0;
+  font-size: 0.88rem;
+  color: #677c81;
+}
+
+.ayurvibe-orderHistoryTopRight {
+  text-align: right;
+}
+
+.ayurvibe-orderHistoryStatus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 23px;
+  padding: 0 9px;
+  border: 1px solid #a9bbbf;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: #33535c;
+}
+
+.ayurvibe-orderHistoryStatus.is-delivered {
+  border-color: #8ea8a0;
+  color: #375f55;
+}
+
+.ayurvibe-orderHistoryStatus.is-shipped {
+  border-color: #8c9fb4;
+  color: #37506d;
+}
+
+.ayurvibe-orderHistoryTotal {
+  margin: 7px 0 0;
+  font-size: 0.95rem;
+  color: #2f5158;
+}
+
+.ayurvibe-orderHistoryItemCount {
+  margin: 10px 0 0;
+  font-size: 0.88rem;
+  color: #4f6a71;
+}
+
+.ayurvibe-orderHistoryItems {
+  margin-top: 10px;
+}
+
+.ayurvibe-orderHistoryItemGrid {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.ayurvibe-orderHistoryItemImage {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  background: #e3e3e3;
+}
+
+.ayurvibe-orderHistoryItemTitle {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #1e434b;
+}
+
+.ayurvibe-orderHistoryItemMeta {
+  margin: 5px 0 0;
+  font-size: 0.88rem;
+  color: #6a7f84;
+}
+
+.ayurvibe-orderHistoryItemPrice {
+  margin: 8px 0 0;
+  font-size: 0.96rem;
+  color: #284b53;
+}
+
+.ayurvibe-orderHistoryActions {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ayurvibe-orderHistoryPrimaryBtn,
+.ayurvibe-orderHistorySecondaryBtn {
+  min-height: 38px;
+  font-size: 0.9rem;
+  padding: 0 12px;
+}
+
+.ayurvibe-orderHistoryPrimaryBtn {
+  border: 0;
+  background: #083b43;
+  color: #d7f2a3;
+}
+
+.ayurvibe-orderHistorySecondaryBtn {
+  border: 1px solid #b8c7cb;
+  background: transparent;
+  color: #234950;
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-orderHistoryTitle {
+    font-size: 2.45rem;
+  }
+
+  .ayurvibe-orderHistoryItemGrid {
+    grid-template-columns: 92px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .ayurvibe-orderHistoryItemImage {
+    width: 92px;
+    height: 114px;
+  }
+
+  .ayurvibe-orderHistoryItemPrice {
+    margin: 0;
+    min-width: 72px;
+    text-align: right;
+  }
+
+  .ayurvibe-orderHistoryPrimaryBtn,
+  .ayurvibe-orderHistorySecondaryBtn {
+    min-height: 42px;
+    font-size: 0.95rem;
+    padding: 0 14px;
+  }
+}
+
+.ayurvibe-orderDetailsPage {
+  color: #17363f;
+}
+
+.ayurvibe-orderDetailsEyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: #36575f;
+}
+
+.ayurvibe-orderDetailsTitle {
+  margin: 8px 0 0;
+  font-size: 2rem;
+  line-height: 1.06;
+  font-weight: 400;
+  color: #123841;
+}
+
+.ayurvibe-orderDetailsSubtitle {
+  margin: 8px 0 0;
+  font-size: 1rem;
+  color: #44626a;
+}
+
+.ayurvibe-orderDetailsCardTitle {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.12;
+  font-weight: 400;
+  color: #143840;
+}
+
+.ayurvibe-orderDetailsTrackingLabel {
+  margin: 10px 0 0;
+  font-size: 0.92rem;
+  color: #47656d;
+}
+
+.ayurvibe-orderDetailsTrackingStatus {
+  color: #35506d;
+}
+
+.ayurvibe-orderDetailsTimeline {
+  margin-top: 12px;
+  border-top: 1px solid #c8d1d4;
+  padding-top: 10px;
+}
+
+.ayurvibe-orderDetailsTimelineRow {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.ayurvibe-orderDetailsTimelineRow + .ayurvibe-orderDetailsTimelineRow {
+  margin-top: 8px;
+}
+
+.ayurvibe-orderDetailsDot {
+  width: 11px;
+  height: 11px;
+  margin-top: 3px;
+  border-radius: 999px;
+  border: 1px solid #98aab0;
+  background: transparent;
+}
+
+.ayurvibe-orderDetailsDot.is-done {
+  border-color: #35506d;
+  background: #35506d;
+}
+
+.ayurvibe-orderDetailsTimelineTitle {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #1f434b;
+}
+
+.ayurvibe-orderDetailsTimelineDate {
+  margin: 3px 0 0;
+  font-size: 0.86rem;
+  color: #678087;
+}
+
+.ayurvibe-orderDetailsItems {
+  margin-top: 10px;
+}
+
+.ayurvibe-orderDetailsItemGrid {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+}
+
+.ayurvibe-orderDetailsItemImage {
+  width: 80px;
+  height: 100px;
+  object-fit: cover;
+  background: #e3e3e3;
+}
+
+.ayurvibe-orderDetailsItemTitle {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-weight: 400;
+  color: #1e434b;
+}
+
+.ayurvibe-orderDetailsItemMeta {
+  margin: 5px 0 0;
+  font-size: 0.88rem;
+  color: #6a7f84;
+}
+
+.ayurvibe-orderDetailsItemPrice {
+  margin: 8px 0 0;
+  font-size: 0.96rem;
+  color: #284b53;
+}
+
+.ayurvibe-orderDetailsAddress {
+  margin: 12px 0 0;
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: #2f5158;
+}
+
+.ayurvibe-orderDetailsSummaryRows {
+  margin-top: 12px;
+  border-top: 1px solid #c8d1d4;
+  border-bottom: 1px solid #c8d1d4;
+  padding: 10px 0;
+}
+
+.ayurvibe-orderDetailsSummaryRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #35575e;
+}
+
+.ayurvibe-orderDetailsSummaryRow + .ayurvibe-orderDetailsSummaryRow {
+  margin-top: 6px;
+}
+
+.ayurvibe-orderDetailsSummaryRow.is-total {
+  margin-top: 10px;
+  font-size: 1.12rem;
+  color: #163b45;
+}
+
+.ayurvibe-orderDetailsSupport {
+  margin-top: 14px;
+}
+
+.ayurvibe-orderDetailsSupportTitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #163c45;
+}
+
+.ayurvibe-orderDetailsSupportText {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #47666d;
+}
+
+.ayurvibe-orderDetailsSupportBtn {
+  margin-top: 10px;
+  min-height: 38px;
+  border: 0;
+  padding: 0 13px;
+  background: #083b43;
+  color: #d7f2a3;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .ayurvibe-orderDetailsTitle {
+    font-size: 2.45rem;
+  }
+
+  .ayurvibe-orderDetailsCardTitle {
+    font-size: 1.58rem;
+  }
+
+  .ayurvibe-orderDetailsItemGrid {
+    grid-template-columns: 92px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .ayurvibe-orderDetailsItemImage {
+    width: 92px;
+    height: 114px;
+  }
+
+  .ayurvibe-orderDetailsItemPrice {
+    margin: 0;
+    min-width: 72px;
+    text-align: right;
+  }
+
+  .ayurvibe-orderDetailsSupportBtn {
+    min-height: 42px;
+    font-size: 0.95rem;
+    padding: 0 14px;
+  }
+}
